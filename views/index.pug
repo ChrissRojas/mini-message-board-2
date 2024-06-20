@@ -3,3 +3,8 @@ extends layout
 block content
   h1= title
   p Welcome to #{title}
+  <ul>
+   each message in messages
+    li message.text
+      div(id="user") message.user 
+      div(class="date") message.date
