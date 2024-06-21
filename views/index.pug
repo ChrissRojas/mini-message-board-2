@@ -5,6 +5,6 @@ block content
   p Welcome to #{title}
   <ul>
    each message in messages
-    li message.text
-      div(id="user") message.user 
-      div(class="date") message.date
+    li #{message.text}
+      div(id="user") #{message.user}
+      div(class="date") #{message.added}
